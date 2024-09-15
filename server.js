@@ -20,7 +20,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: 'https://mern-front-nine.vercel.app/',
+    origin: 'https://mern-front-nine.vercel.app',
     credentials: true
 }))
 app.use('/',authRoute)
